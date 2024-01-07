@@ -1,0 +1,28 @@
+.nav-item:hover{
+    background-color:#203658;
+    color: white;
+    font-weight: normal;
+}
+.font1{
+    font-family: '';
+}
+
+.nav-item{
+    padding: .5%;
+    border-radius: 50px;
+    text-transform: uppercase  ;
+}
+
+
+*{
+    color: #1B2D49;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .nav-item {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+}

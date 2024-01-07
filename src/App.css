@@ -1,0 +1,70 @@
+.box {
+    height: 60%;
+    width: 80%; 
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.cli {   
+    font-size: 2.4rem;
+}
+.heading{
+    font-size: 2.4rem;
+}
+
+.para {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.services {
+    
+    font-size: 2.4rem;
+}
+.demo{
+    position: relative;
+    left: 45%;
+}
+
+.card-item{
+    background-color: #1B2D49;
+}
+
+.card-item>button{
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.consultation>button{
+    margin-top: 0px;    
+}
+
+.access{
+    margin-left: 10%;
+}
+.card-img{  
+    border-radius: 20px;
+    height: 8em;
+    width: 12em;
+    padding: 2%;
+}
+.qs{
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+    font-weight: normal;    
+}
+
+
+.chart>button{
+    position: relative;
+    left: 45%;
+}
+
+
