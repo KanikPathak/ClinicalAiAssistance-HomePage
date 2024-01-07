@@ -78,7 +78,7 @@ function App() {
         </div>
 
         <div className="cards m-20 grid grid-cols-5 gap-4">
-          <div className="consultation card-item ">
+          <div className="consultation card-item blue-shade ">
             <img src="./media/1.png" alt="" className="card-img mt-10 ml-7" />
             <div className="desc text-white text-center  p-3">
               AI AIDED ONLINE DOCTOR CONSULTATION
@@ -87,7 +87,7 @@ function App() {
             <button className="access">Access</button>
           </div>
 
-          <div className="dataset card-item">
+          <div className="dataset card-item blue-shade">
             <img src="./media/2.png" alt="" className="card-img mt-10 ml-7" />
             <div className="desc text-white text-center  p-4">
               CLINICAL DATASETS
@@ -96,7 +96,7 @@ function App() {
             <button className="access">Access</button>
           </div>
 
-          <div className="frameword card-item">
+          <div className="frameword card-item blue-shade">
             <img src="./media/3.png" alt="" className="card-img mt-10 ml-7" />
             <div className="desc text-white text-center  p-4">
               CLINICAL FRAMEWORKS
@@ -105,14 +105,14 @@ function App() {
             <button className="access">Access</button>
           </div>
 
-          <div className="mentor card-item">
+          <div className="mentor card-item blue-shade">
             <img src="./media/4.png" alt="" className="card-img mt-10 ml-7" />
             <div className="desc text-white text-center  p-4">MENTORSHIP</div>
             <button className="details">Details</button>
             <button className="access">Access</button>
           </div>
 
-          <div className="pharma card-item">
+          <div className="pharma card-item blue-shade">
             <img src="./media/5.png" alt="" className="card-img mt-10 ml-7" />
             <div className="desc text-white text-center  p-4">
               NUTRACEUTICAL PRODUCTS
@@ -125,8 +125,8 @@ function App() {
 
       <div className="chart">
         <div className="2equal-grid grid grid-cols-2 text-center m-20 mt-52 ">
-          <div className="qs bg-yellow-400 p-10 rounded-lg ">
-            <span className="m-20 text-5xl ">DO YOU THINK </span>
+          <div className="qs bg-yellow-300 p-10 rounded-lg ">
+            <span className="m-20 text-6xl ">DO YOU THINK </span>
             <span className="text-normal">
               a junior can save your time if they could have performed initial
               symptom investigation?
@@ -204,27 +204,57 @@ function App() {
         <div className="robo">
           <img src="./media/robo.png" className="robott" alt="" />
         </div>
-        <div className="chat-container flex flex-col gap-7 overflow-hidden" style={{fontFamily:""}}>
-          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">Hi There! How are you feeling today?</div>
-          <div className="bg-blue-400 p-4 rounded-3xl text-white font-normal">I'm not feeling well.</div>
-          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">Can you specify your problem?</div>
-          <div className="bg-blue-400 p-4 rounded-3xl text-white font-normal">Headache since last night?</div>
-          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">Are you taking any medications?</div>
-          <div className="bg-gray-400 p-3 rounded-3xl text-white font-normal">Type here..
-          <span className="flex justify-end"><img src="./media/microphone-342.svg" className="w-6 relative bottom-4" alt="" /></span>
+        <div
+          className="chat-container flex flex-col gap-7 overflow-hidden"
+          style={{ fontFamily: "" }}
+        >
+          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">
+            Hi There! How are you feeling today?
+          </div>
+          <div className="bg-blue-400 p-4 rounded-3xl text-white font-normal">
+            I'm not feeling well.
+          </div>
+          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">
+            Can you specify your problem?
+          </div>
+          <div className="bg-blue-400 p-4 rounded-3xl text-white font-normal">
+            Headache since last night?
+          </div>
+          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">
+            Are you taking any medications?
+          </div>
+          <div className="bg-gray-400 p-3 rounded-3xl text-white font-normal">
+            Type here..
+            <span className="flex justify-end">
+              <img
+                src="./media/microphone-342.svg"
+                className="w-6 relative bottom-4"
+                alt=""
+              />
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="docRob flex mt-36" style={{
-        alignItems:"center"
-      }}>
-        <img src="./media/robdoc.jpg" className="" alt="" />
-        <span className="text-xl font1 font-normal text-center p-20  bg-yellow-100 m-10 tracking-wide "style={{
-          textTransform:"uppercase"
-        }} >
-        Empowering healthcare professionals with advanced AI assistance, our tool accelerates symptom investigations and disease diagnosis. Designed exclusively for clinicians, this assistant stands ready to enhance the capabilities of your healthcare team. Reach out to us, and let's together shape the future of efficient and precise medical diagnostics
-      </span>
+      <div
+        className="docRob flex mt-30"
+        style={{
+          alignItems: "center",
+        }}
+      >
+        <img src="./media/patta-kot.png" className="p-20" alt="" />
+      </div>
+
+      <div className="footer grid grid-cols-4 blue-shade ">
+        <div className="text-white font-normal text-center flex justify-center m-10">
+          <span className="heading font-normal gap-5 mx-20 text-sm text-white flex">
+            <img src="./media/untitled.png" alt="" className="w-10"/>Clinical AI Assistance</span>
+            <span className="rights">
+            </span>
+        </div>
+        <div className="text-white font-normal text-center">fdbfdbv</div>
+        <div className="text-white font-normal text-center">trhr</div>
+        <div className="text-white font-normal text-center">322</div>
       </div>
     </>
   );
