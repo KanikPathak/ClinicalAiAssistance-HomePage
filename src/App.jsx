@@ -1,4 +1,4 @@
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import "./app.css";
 import { useRef, useEffect, useState } from "react";
 
@@ -216,9 +216,15 @@ function App() {
         </div>
       </div>
 
-      <div className="docRob flex">
-        asfas
+      <div className="docRob flex mt-36" style={{
+        alignItems:"center"
+      }}>
         <img src="./media/robdoc.jpg" className="" alt="" />
+        <span className="text-xl font1 font-normal text-center p-20  bg-yellow-100 m-10 tracking-wide "style={{
+          textTransform:"uppercase"
+        }} >
+        Empowering healthcare professionals with advanced AI assistance, our tool accelerates symptom investigations and disease diagnosis. Designed exclusively for clinicians, this assistant stands ready to enhance the capabilities of your healthcare team. Reach out to us, and let's together shape the future of efficient and precise medical diagnostics
+      </span>
       </div>
     </>
   );
