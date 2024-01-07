@@ -1,19 +1,23 @@
 import Navbar from "./components/navbar";
 import "./app.css";
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
+
 function App() {
+  const robottRef = useRef(null);
   const [roboPos, setroboPos] = useState(0);
+
   useEffect(() => {
     const movingRobo = () => {
-      const robott = document.querySelector(".robott");
-      console.log(robott.scrollY);
-      setroboPos(robott.scrollY);
+      if (robottRef.current) {
+        const robottPosition = robottRef.current.getBoundingClientRect().top;
+        setroboPos(robottPosition);
+      }
     };
 
     window.addEventListener("scroll", movingRobo);
-    return()=>{
-      window.removeEventListener("scroll", movingRobo)
-    }
+    return () => {
+      window.removeEventListener("scroll", movingRobo);
+    };
   }, []);
 
   return (
@@ -198,18 +202,23 @@ function App() {
         </div>
 
         <div className="robo">
-          <img
-            src="./media/robo.png"
-            className="robott"
-            alt=""
-            style={{
-              transform: `translateY(${roboPos}px)`,
-            }}
-          />
+          <img src="./media/robo.png" className="robott" alt="" />
         </div>
-        <div className="chat">
-          
+        <div className="chat-container flex flex-col gap-7 overflow-hidden" style={{fontFamily:""}}>
+          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">Hi There! How are you feeling today?</div>
+          <div className="bg-blue-400 p-4 rounded-3xl text-white font-normal">I'm not feeling well.</div>
+          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">Can you specify your problem?</div>
+          <div className="bg-blue-400 p-4 rounded-3xl text-white font-normal">Headache since last night?</div>
+          <div className="bg-red-300 p-4 rounded-3xl text-white font-normal text-end">Are you taking any medications?</div>
+          <div className="bg-gray-400 p-3 rounded-3xl text-white font-normal">Type here..
+          <span className="flex justify-end"><img src="./media/microphone-342.svg" className="w-6 relative bottom-4" alt="" /></span>
+          </div>
         </div>
+      </div>
+
+      <div className="docRob flex">
+        asfas
+        <img src="./media/robdoc.jpg" className="" alt="" />
       </div>
     </>
   );
