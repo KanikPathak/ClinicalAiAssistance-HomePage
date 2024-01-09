@@ -1,9 +1,9 @@
 .box {
-    height: 60%;
-    width: 80%; 
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    width: 60%; 
+}
+.Intro{
+    background-image: url("./media/MEDICAK.jpg");
+    background-size: 100%;
 }
 
 .cli {   
@@ -19,26 +19,19 @@
     font-weight: 400;
 }
 
-.services {
-    
-    font-size: 2.4rem;
-}
-.demo{
-    position: relative;
-    left: 45%;
-}
 
 .blue-shade{
     background-color: #1B2D49;
 }
 
-.card-item>button{
+.details,.access{
     background-color: white;
     border-radius: 20px;
-    padding: 2%;
-    width: 30%;
+    padding: 5%;
+    width: 100%;
+    font-size: 80%;
     margin-left: 15%;
-    margin-top: 1rem;
+    margin-top: 10%;
     margin-bottom: 2rem;
 }
 .consultation>button{
@@ -50,8 +43,8 @@
 }
 .card-img{  
     border-radius: 20px;
-    height: 8em;
-    width: 12em;
+
+    width: 80%;
     padding: 2%;
 }
 .qs{
