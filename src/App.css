@@ -52,12 +52,7 @@
 .access{
     margin-left: 10%;
 }
-.card-img{  
-    border-radius: 20px;
 
-    width: 80%;
-    padding: 2%;
-}
 /* Original styles for larger screens */
 .cards {
     display: grid;
@@ -80,4 +75,11 @@
     left: 45%;
 }
 
-
+.card-img {
+  width: 100%; /* Make the width 100% to fill the container */
+  height: 70%; /* Maintain the aspect ratio */
+  object-fit: cover; /* Cover the entire container */
+  overflow:hidden;
+  display: block; /* Ensure block-level display for proper alignment */
+  margin: 0 auto; /* Center the image horizontally */
+}

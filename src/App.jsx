@@ -30,9 +30,8 @@ function App() {
             <span className="cli font1 mr-3" > CLINICAL </span>
             <span
               style={{ color: "red" }}
-              className="cli font1 mr-3
-            "
-            >
+              className="cli font1 mr-3"
+              >
               AI
             </span>
             <span className="cli font1 "> ASSISTANCE </span>
@@ -61,12 +60,15 @@ function App() {
             platform now offers AI-assisted online consultations, clinical
             datasets, and mentorship opportunities.
           </div>
+          <div className="flex justify-center" >
+
           <button
-            className="bg-sky-500/ p-3 text-white rounded-lg demo mt-14 bg-blue-400"
+            className="bg-sky-500/ p-3 text-white rounded-lg demo mt-14 w-36  bg-blue-400"
             style={{ fontFamily: "", fontWeight: "normal" }}
-          >
+            >
             Demo Booking
           </button>
+            </div>
           <div className="signUpButton flex justify-center ">
             <button
               className="mt-10 p-4 w-40 mb-7 text-lg font-light rounded-full cli text-white"
@@ -85,21 +87,23 @@ function App() {
 
         <div className="cards m-4 grid sm:grid-cols-5 gap-4">
   {/* Card Item 1 */}
-  <div className="consultation card-item blue-shade flex flex-col items-center p-4">
-    <img src="./media/1.png" alt="" className="card-img mt-4" />
-    <div className="desc text-white text-center p-2">
-      AI AIDED ONLINE DOCTOR CONSULTATION
+  <div className="consultation card-item blue-shade flex flex-col items-center p-2">
+    <div className="h-60 m-2"
+    style={{
+      flexDirection:"column"
+    }}>
+    <img src="./media/doktor.jpg" alt="" className="card-img" />
+    <div className="desc text-white text-center p-2 ">
+    AI AIDED ONLINE DOCTOR CONSULTATION
     </div>
-    <div className="flex mr-10 w-full justify-center">
+    </div>
+    <div className="flex mr-10 w-full justify-center ">
       <button
-        className="details"
-
-      >
+        className="details">
         Details
       </button>
       <button
         className="access"
-
       >
         Access
       </button>
@@ -107,10 +111,16 @@ function App() {
   </div>
 
   {/* Card Item 2 */}
-  <div className="dataset card-item blue-shade flex flex-col items-center p-4">
-    <img src="./media/2.png" alt="" className="card-img mt-4" />
+  <div className="dataset card-item blue-shade flex p-4" style={{
+    flexDirection:"column",
+    alignItems:"center"
+  }}>
+    
+    <div className="h-60 ">
+    <img src="./media/2.png" alt="" className="card-img " />
     <div className="desc text-white text-center p-2">
       CLINICAL DATASETS
+    </div>
     </div>
     <div className="flex mr-10 w-full justify-center">
       <button
@@ -129,10 +139,16 @@ function App() {
   </div>
 
   {/* Card Item 3 */}
-  <div className="frameword card-item blue-shade flex flex-col items-center p-4">
-    <img src="./media/3.png" alt="" className="card-img mt-4" />
+  <div className="frameword card-item blue-shade flex p-4" style={{
+    flexDirection:"column",
+    alignItems:"center"
+  }}>
+    <div className="h-60 ">
+
+    <img src="./media/3.png" alt="" className="card-img  " />
     <div className="desc text-white text-center p-2">
       CLINICAL FRAMEWORKS
+    </div>
     </div>
     <div className="flex mr-10 w-full justify-center">
       <button
@@ -151,9 +167,15 @@ function App() {
   </div>
 
   {/* Card Item 4 */}
-  <div className="mentor card-item blue-shade flex flex-col items-center p-4">
-    <img src="./media/4.png" alt="" className="card-img mt-4" />
+  <div className="mentor card-item blue-shade flex p-4" style={{
+    flexDirection:"column",
+    alignItems:"center"
+  }}>
+    <div className="h-60 ">
+
+    <img src="./media/4.png" alt="" className="card-img " />
     <div className="desc text-white text-center p-2">MENTORSHIP</div>
+    </div>
     <div className="flex mr-10 w-full justify-center">
       <button
         className="details mt-2"
@@ -171,10 +193,16 @@ function App() {
   </div>
 
   {/* Card Item 5 */}
-  <div className="pharma card-item blue-shade flex flex-col items-center p-4">
-    <img src="./media/5.png" alt="" className="card-img mt-4" />
-    <div className="desc text-white text-center p-2">
+  <div className="pharma card-item blue-shade flex p-4" style={{
+    flexDirection:"column",
+    alignItems:"center"
+  }}>
+    <div className="h-60  ">
+
+    <img src="./media/5.png" alt="" className="card-img  "/>
+    <div className="desc text-white text-center p-2 ">
       NUTRACEUTICAL PRODUCTS
+    </div>
     </div>
     <div className="flex mr-10 w-full justify-center">
       <button
